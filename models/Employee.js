@@ -9,4 +9,5 @@ const EmployeeSchema = new Schema({
   accountId: { type: Schema.Types.ObjectId, ref: "Account", required: true },
 });
 
-export default Employee = mongoose.model("Employee", EmployeeSchema);
+const Employee = mongoose.model("Employee", EmployeeSchema);
+export default Employee;
