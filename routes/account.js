@@ -18,5 +18,26 @@ AccountRouter.post(
   verifyToken,
   AccountController.createProperty2
 );
+AccountRouter.put(
+  "/updateProperty/:id",
+  verifyToken,
+  AccountController.updateProperty
+);
+AccountRouter.post(
+  "/createDepositOrder",
+  verifyToken,
+  AccountController.createDepositOrder
+);
+AccountRouter.get(
+  "/getDepositOrders",
+  verifyToken,
+  AccountController.getDepositOrders
+);
+
+AccountRouter.get(
+  "/getMyDepositOrder/:email",
+  verifyToken,
+  AccountController.getMyDepositOrders
+);
 
 export default AccountRouter;

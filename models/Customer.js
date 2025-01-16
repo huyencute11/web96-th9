@@ -8,4 +8,6 @@ const CustomerSchema = new Schema({
     address: { type: String, required: true },
     accountId: { type: Schema.Types.ObjectId, ref: "Account", required: true },
   });
-export default Customer = mongoose.model("Customer", CustomerSchema);
+
+const Customer = mongoose.model("Customer", CustomerSchema);
+export default Customer;

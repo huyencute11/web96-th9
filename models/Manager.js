@@ -7,5 +7,5 @@ const ManagerSchema = new Schema({
   department: { type: String, required: true },
   accountId: { type: Schema.Types.ObjectId, ref: "Account", required: true },
 });
-
-export default Manager = mongoose.model("Manager", ManagerSchema);
+const Manager = mongoose.model("Manager", ManagerSchema);
+export default Manager;
